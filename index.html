@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Jose Antonio Jiménez Electricista - Sevilla | Averías y Reformas Eléctricas</title>
+    <meta name="description" content="Jose Antonio Jiménez - Electricista profesional en Sevilla. Averías, reformas eléctricas e iluminación LED. Presupuesto sin compromiso. ☎ 615 585 466"/>
+    <meta name="keywords" content="electricista sevilla, electricista, averías eléctricas, reformas eléctricas, iluminación LED, boletín eléctrico"/>
+    <meta property="og:title" content="Jose Antonio Jiménez - Electricista Profesional Sevilla"/>
+    <meta property="og:description" content="Soluciones eléctricas rápidas y seguras. Servicio profesional garantizado."/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FBBF24",
+                        "background-light": "#F3F4F6",
+                        "background-dark": "#0F0F10",
+                        "secondary-dark": "#1F2937",
+                        "secondary-light": "#FFFFFF",
+                    },
+                    fontFamily: {
+                        display: ["Montserrat", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display min-h-screen flex flex-col transition-colors duration-300">
+    <header class="bg-secondary-light dark:bg-secondary-dark shadow-md dark:shadow-none sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="material-icons text-primary text-3xl">bolt</span>
+                <h1 class="text-xl font-bold text-gray-800 dark:text-gray-100 hidden sm:block">
+                    JOSE ANTONIO JIMÉNEZ
+                </h1>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold">
+                <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition" href="#">INICIO</a>
+                <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition" href="#servicios">SERVICIOS</a>
+                <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition" href="#testimonios">OPINIONES</a>
+                <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition" href="#galeria">GALERÍA</a>
+                <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition" href="#contacto">CONTACTO</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <button id="darkModeToggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition hidden md:block">
+                    <span class="material-icons text-gray-600 dark:text-gray-300">dark_mode</span>
+                </button>
+                <a class="bg-green-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-green-600 transition shadow-lg hidden sm:flex items-center gap-2" href="https://wa.me/34615585466?text=Hola,%20necesito%20información%20sobre%20sus%20servicios" target="_blank">
+                    <span class="material-icons text-sm">chat</span>
+                    WhatsApp
+                </a>
+                <a class="bg-primary text-gray-900 px-4 py-2 rounded-lg font-bold hover:bg-yellow-300 transition shadow-lg flex items-center gap-2" href="tel:615585466">
+                    <span class="material-icons text-sm">call</span>
+                    <span class="hidden sm:inline">615 585 466</span>
+                    <span class="sm:hidden">Llamar</span>
+                </a>
+                <button id="mobileMenuToggle" class="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+                    <span class="material-icons text-gray-600 dark:text-gray-300">menu</span>
+                </button>
+            </div>
+        </div>
+        <nav id="mobileMenu" class="hidden md:hidden bg-white dark:bg-secondary-dark border-t border-gray-200 dark:border-gray-700">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-3">
+                <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition font-semibold" href="#">INICIO</a>
+                <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition font-semibold" href="#servicios">SERVICIOS</a>
+                <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition font-semibold" href="#testimonios">OPINIONES</a>
+                <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition font-semibold" href="#galeria">GALERÍA</a>
+                <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition font-semibold" href="#contacto">CONTACTO</a>
+                <a class="bg-green-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-green-600 transition text-center flex items-center justify-center gap-2" href="https://wa.me/34615585466?text=Hola,%20necesito%20información%20sobre%20sus%20servicios" target="_blank">
+                    <span class="material-icons text-sm">chat</span>
+                    WhatsApp
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow">
+        <section class="relative bg-secondary-light dark:bg-secondary-dark overflow-hidden">
+            <div class="container mx-auto px-4 py-16 md:py-24 lg:py-32 flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1 text-center md:text-left z-10">
+                    <div class="inline-block bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold tracking-wider mb-4 uppercase">
+                        Electricista Profesional
+                    </div>
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 dark:text-white leading-tight mb-6">
+                        Soluciones Eléctricas <span class="text-primary">Rápidas y Seguras</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-lg mx-auto md:mx-0">
+                        Especialista en averías y reformas. Servicio profesional garantizado. Pida presupuesto sin compromiso hoy mismo.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a class="bg-primary text-gray-900 text-lg font-bold px-8 py-4 rounded-lg shadow-xl hover:bg-yellow-300 hover:translate-y-[-2px] transition transform flex justify-center items-center gap-2" href="tel:615585466">
+                            <span class="material-icons">phone_in_talk</span>
+                            LLAMAR AHORA
+                        </a>
+                        <a class="bg-white dark:bg-gray-700 text-gray-800 dark:text-white border border-gray-200 dark:border-gray-600 text-lg font-bold px-8 py-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-600 transition flex justify-center items-center" href="#contacto">
+                            Solicitar Presupuesto
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1 flex justify-center items-center relative">
+                    <div class="absolute w-72 h-72 bg-primary/20 dark:bg-primary/10 rounded-full blur-3xl -z-10"></div>
+                    <div class="relative bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 max-w-md w-full text-center">
+                        <div class="flex justify-center mb-6">
+                            <div class="w-32 h-32 relative">
+                                <svg class="w-full h-full drop-shadow-lg" viewBox="0 0 100 100">
+                                    <path d="M90 45 L80 45 A 35 35 0 0 0 76.5 36.5 L 83.5 29.5 L 76.5 22.5 L 69.5 29.5 A 35 35 0 0 0 61 26 L 61 16 L 51 16 L 51 26 A 35 35 0 0 0 42.5 29.5 L 35.5 22.5 L 28.5 29.5 L 35.5 36.5 A 35 35 0 0 0 32 45 L 22 45 L 22 55 L 32 55 A 35 35 0 0 0 35.5 63.5 L 28.5 70.5 L 35.5 77.5 L 42.5 70.5 A 35 35 0 0 0 51 74 L 51 84 L 61 84 L 61 74 A 35 35 0 0 0 69.5 70.5 L 76.5 77.5 L 83.5 70.5 L 76.5 63.5 A 35 35 0 0 0 80 55 L 90 55 Z" fill="#D1D5DB" stroke="none"></path>
+                                    <path d="M55 10 L 35 50 L 50 50 L 40 90 L 70 45 L 55 45 Z" fill="#FBBF24" stroke="#000" stroke-width="1"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">JOSE ANTONIO JIMÉNEZ</h3>
+                        <p class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Electricista</p>
+                        <div class="grid grid-cols-2 gap-2 text-left text-sm text-gray-600 dark:text-gray-400 mt-6 border-t border-gray-100 dark:border-gray-700 pt-4">
+                            <div class="flex items-center gap-2"><span class="material-icons text-green-500 text-sm">check_circle</span>Rapidez</div>
+                            <div class="flex items-center gap-2"><span class="material-icons text-green-500 text-sm">check_circle</span>Garantía</div>
+                            <div class="flex items-center gap-2"><span class="material-icons text-green-500 text-sm">check_circle</span>Factura</div>
+                            <div class="flex items-center gap-2"><span class="material-icons text-green-500 text-sm">check_circle</span>Calidad</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-background-light dark:bg-background-dark" id="servicios">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Nuestros Servicios</h2>
+                    <div class="w-20 h-1 bg-primary mx-auto rounded"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white dark:bg-secondary-dark p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-primary group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+                            <span class="material-icons text-primary text-3xl group-hover:text-gray-900">home_repair_service</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Averías y Reparaciones</h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Diagnóstico rápido y solución efectiva para todo tipo de problemas eléctricos en el hogar o negocio.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-secondary-dark p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-primary group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+                            <span class="material-icons text-primary text-3xl group-hover:text-gray-900">construction</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Reformas Eléctricas</h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Modernización de instalaciones antiguas, cambios de cableado y adecuación a nuevas normativas.
+                        </p>
+                    </div>
+                    <div class="bg-white dark:bg-secondary-dark p-8 rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-primary group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+                            <span class="material-icons text-primary text-3xl group-hover:text-gray-900">lightbulb</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Iluminación LED</h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Instalación de sistemas de iluminación eficientes para reducir el consumo y mejorar la estética.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white dark:bg-secondary-dark" id="testimonios">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Lo que dicen nuestros clientes</h2>
+                    <div class="w-20 h-1 bg-primary mx-auto rounded"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 dark:bg-background-dark p-6 rounded-xl shadow-lg">
+                        <div class="flex mb-4">
+                            <span class="material-icons text-primary">star</span>
+                            <span class="material-icons text-primary">star</span>
+                            <span class="material-icons text-primary">star</span>
+                            <span class="material-icons text-primary">star</span>
+                            <span class="material-icons text-primary">star</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4 italic">"Servicio rápido y profesional. Solucionó mi avería en menos de una hora. Muy recomendable."</p>
+                        <p class="font-bold text-gray-900 dark:text-white">- María G.</p>
+                    </div>
+                    <div class="bg-gray-50 dark:bg-background-dark p-6 rounded-xl shadow-lg">
+                        <div class="flex mb-4">
+                            <span class="material-icons text-primary">star</span>
+                            <span class="material-icons text-primary">star</span>
+                            <span class="material-icons text-primary">star</span>
+                            <span class="material-icons text-primary">star</span>
+                            <span class="material-icons text-primary">star</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4 italic">"Muy recomendable. Trabajo limpio, profesional y precio justo. Sin duda volveré a contar con él."</p>
+                        <p class="font-bold text-gray-900 dark:text-white">- Carlos R.</p>
+                    </div>
+                    <div class="bg-gray-50 dark:bg-background-dark p-6 rounded-xl shadow-lg">
+                        <div class="flex mb-4">
+                            <span class="material-icons text-primary">star</span>
+                            <span class="material-icons text-primary">star</span>
+                            <span class="material-icons text-primary">star</span>
+                            <span class="material-icons text-primary">star</span>
+                            <span class="material-icons text-primary">star</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4 italic">"Excelente atención y muy profesional en todo momento. Lo recomiendo 100%."</p>
+                        <p class="font-bold text-gray-900 dark:text-white">- Ana L.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-background-light dark:bg-background-dark" id="galeria">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Nuestros Trabajos</h2>
+                    <div class="w-20 h-1 bg-primary mx-auto rounded"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="relative group overflow-hidden rounded-xl shadow-lg aspect-square">
+
+                        <div id="slider-1" class="flex overflow-x-hidden snap-x snap-mandatory h-full scroll-smooth">
+                            <img src="img/Reforma cocina.jpg" class="flex-shrink-0 w-full h-full object-cover snap-center">
+                            <img src="img/Reforma cocina final.jpg" class="flex-shrink-0 w-full h-full object-cover snap-center">
+                            <img src="img/contador 1.jpg" class="flex-shrink-0 w-full h-full object-cover snap-center">
+                            <img src="img/contador 2.jpg" class="flex-shrink-0 w-full h-full object-cover snap-center">
+                            <img src="img/contador 1.1.jpg" class="flex-shrink-0 w-full h-full object-cover snap-center">
+                            <img src="img/contador 1.2.jpg" class="flex-shrink-0 w-full h-full object-cover snap-center">
+
+                        </div>  
+                           <button onclick="moveSlider('slider-1', -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 p-1 rounded-full text-white backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                               <span class="material-icons">chevron_left</span>
+                           </button>
+
+                           <button onclick="moveSlider('slider-1', 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 p-1 rounded-full text-white backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                 <span class="material-icons">chevron_right</span>
+                           </button>
+
+                                   <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white pointer-events-none">
+                                  <h4 class="font-bold text-lg">Reforma Integral</h4>
+                                 <p class="text-sm">Vivienda particular</p>
+                          </div>
+                         </div>
+                                            <div class="relative group overflow-hidden rounded-xl shadow-lg aspect-square">
+                        <div id="slider-3" class="flex overflow-x-hidden snap-x snap-mandatory h-full scroll-smooth">
+                            <img src="img/cuadro 1.jpg" class="flex-shrink-0 w-full h-full object-cover snap-center">
+                            <img src="img/cuadro 2.jpg" class="flex-shrink-0 w-full h-full object-cover snap-center">
+                            <img src="img/cuadro 3 final.jpg" class="flex-shrink-0 w-full h-full object-cover snap-center">
+                        </div>
+                           <button onclick="moveSlider('slider-3', -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 p-1 rounded-full text-white backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                               <span class="material-icons">chevron_left</span>
+                           </button>
+
+                           <button onclick="moveSlider('slider-3', 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 p-1 rounded-full text-white backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                 <span class="material-icons">chevron_right</span>
+                           </button>
+
+                                   <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white pointer-events-none">
+
+                                <h4 class="font-bold text-lg">Instalación y modernización de cuadro eléctrico</h4>
+                                <p class="text-sm">Renovación completa y reforma</p>
+                            </div>
+                        </div>
+                                <div class="relative group overflow-hidden rounded-xl shadow-lg aspect-square">
+                          <div id="slider-2" class="flex overflow-x-hidden snap-x snap-mandatory h-full scroll-smooth">
+                            <img src="img/Luz 2.jpg" class="flex-shrink-0 w-full h-full object-cover snap-center">
+                            <img src="img/Luz 1.jpg" class="flex-shrink-0 w-full h-full object-cover snap-center">
+                          </div>  
+                           <button onclick="moveSlider('slider-2', -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 p-1 rounded-full text-white backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                               <span class="material-icons">chevron_left</span>
+                           </button>
+
+                           <button onclick="moveSlider('slider-2', 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 p-1 rounded-full text-white backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                 <span class="material-icons">chevron_right</span>
+                           </button>
+
+                                   <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white pointer-events-none">
+
+                                <h4 class="font-bold text-lg">Iluminación LED</h4>
+                                <p class="text-sm">Locales comerciales y comunidades</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white dark:bg-secondary-dark">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Garantías</h2>
+                    <div class="w-20 h-1 bg-primary mx-auto rounded"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="material-icons text-primary text-4xl">security</span>
+                        </div>
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-2">Seguro de Responsabilidad</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Todos los trabajos cubiertos</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="material-icons text-primary text-4xl">workspace_premium</span>
+                        </div>
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-2">Garantía de Calidad</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Materiales homologados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-primary py-12">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">¿Necesita un electricista de confianza?</h2>
+                <p class="text-gray-800 text-lg mb-6 font-medium">Pida su presupuesto sin compromiso</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a class="inline-flex items-center justify-center bg-gray-900 text-white font-bold py-3 px-8 rounded-lg hover:bg-gray-800 transition shadow-lg" href="tel:615585466">
+                        <span class="material-icons mr-2">call</span>
+                        615 585 466
+                    </a>
+                    <a class="inline-flex items-center justify-center bg-green-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-green-600 transition shadow-lg" href="https://wa.me/34615585466?text=Hola,%20necesito%20información%20sobre%20sus%20servicios" target="_blank">
+                        <span class="material-icons mr-2">chat</span>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-background-light dark:bg-secondary-dark" id="contacto">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row gap-12">
+                <div class="flex-1">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Contacto</h2>
+                    <p class="text-gray-600 dark:text-gray-300 mb-8">
+                        Estamos disponibles para atender cualquier consulta o urgencia. No dude en contactarnos a través del teléfono o rellenando el formulario.
+                    </p>
+                    <div class="bg-primary/10 p-4 rounded-lg mb-6">
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+                            <span class="material-icons text-primary">location_on</span>
+                            Zona de cobertura
+                        </h4>
+                        <p class="text-gray-700 dark:text-gray-300">Sevilla capital y alrededores</p>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary/20 p-3 rounded-lg mr-4">
+                                <span class="material-icons text-primary">schedule</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 dark:text-white">Horario</h4>
+                                <p class="text-gray-600 dark:text-gray-400">Lunes - Viernes: 8:00 - 20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6 mt-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary/20 p-3 rounded-lg mr-4">
+                                <span class="material-icons text-primary">email</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 dark:text-white">Correo</h4>
+                                <p class="text-gray-600 dark:text-gray-400">joseantonio.electricistasevilla@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 bg-gray-50 dark:bg-background-dark p-8 rounded-xl shadow-inner">
+                    <div id="formSuccess" class="hidden mb-4 p-4 bg-green-100 dark:bg-green-900/30 border border-green-400 dark:border-green-700 text-green-700 dark:text-green-300 rounded-lg flex items-center gap-2">
+                        <span class="material-icons">check_circle</span>
+                        <span>¡Mensaje enviado correctamente! Nos pondremos en contacto pronto.</span>
+                    </div>
+                    <div id="formError" class="hidden mb-4 p-4 bg-red-100 dark:bg-red-900/30 border border-red-400 dark:border-red-700 text-red-700 dark:text-red-300 rounded-lg flex items-center gap-2">
+                        <span class="material-icons">error</span>
+                        <span>Error al enviar el mensaje. Por favor, inténtelo de nuevo o llámenos directamente.</span>
+                    </div>
+                    <form id="contactForm" action="https://formsubmit.co/joseantonio.electricistasevilla@gmail.com" method="POST" class="space-y-4">
+                        <input type="hidden" name="_subject" value="Nueva consulta desde la web - Electricista Sevilla">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="name">Nombre *</label>
+                            <input class="w-full rounded-md border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 dark:bg-secondary-dark dark:text-white" id="name" name="Nombre" placeholder="Su nombre completo" type="text" required/>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="phone">Teléfono *</label>
+                            <input class="w-full rounded-md border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 dark:bg-secondary-dark dark:text-white" id="phone" name="Teléfono" placeholder="Ej: 612 345 678" type="tel" required/>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="email">Email *</label>
+                            <input class="w-full rounded-md border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 dark:bg-secondary-dark dark:text-white" id="email" name="Email" placeholder="su@email.com" type="email" required/>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="service">Servicio</label>
+                            <select class="w-full rounded-md border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 dark:bg-secondary-dark dark:text-white" id="service" name="Servicio solicitado">
+                                <option value="Averías">Avería eléctrica</option>
+                                <option value="Reforma">Reforma eléctrica</option>
+                                <option value="Iluminación LED">Iluminación LED</option>
+                                <option value="Presupuesto">Presupuesto general</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="message">Mensaje *</label>
+                            <textarea class="w-full rounded-md border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 dark:bg-secondary-dark dark:text-white" id="message" name="Mensaje" placeholder="Describa su consulta o necesidad..." rows="4" required></textarea>
+                        </div>
+                        <button class="w-full bg-primary hover:bg-yellow-300 text-gray-900 font-bold py-3 px-6 rounded-lg transition shadow-lg flex items-center justify-center gap-2" type="submit">
+                            <span class="material-icons">send</span>
+                            Enviar Consulta
+                        </button>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 text-center">* Campos obligatorios</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <span class="material-icons text-primary text-3xl">bolt</span>
+                        <h3 class="text-lg font-bold text-white dark:text-white-100">JOSE ANTONIO JIMÉNEZ</h3>
+                    </div>
+                    <p class="text-white-600 dark:text-white-400 text-sm">
+                        Electricista profesional en Sevilla. Soluciones eléctricas rápidas y seguras.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white-900 dark:text-white mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a class="text-white-600 dark:text-white-400 hover:text-primary transition" href="#servicios">Servicios</a></li>
+                        <li><a class="text-white-600 dark:text-white-400 hover:text-primary transition" href="#testimonios">Opiniones</a></li>
+                        <li><a class="text-white-600 dark:text-white-400 hover:text-primary transition" href="#galeria">Galería</a></li>
+                        <li><a class="text-white-600 dark:text-white-400 hover:text-primary transition" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white-900 dark:text-white mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-sm text-white-600 dark:text-white-400">
+                        <li class="flex items-center gap-2">
+                            <span class="material-icons text-primary text-sm">call</span>
+                            <a href="tel:615585466" class="hover:text-primary transition">615 585 466</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-icons text-primary text-sm">email</span>
+                            <span>joseantonio.electricistasevilla@gmail.com</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-icons text-primary text-sm">location_on</span>
+                            <span>Sevilla y alrededores</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 dark:border-gray-700 pt-6 text-center">
+                <p class="text-white-600 dark:text-white-400 text-sm">
+                    © 2026 Jose Antonio Jiménez - Electricista. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode toggle
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem("theme") || "light";
+        if (currentTheme === "dark") {
+            html.classList.add("dark");
+        }
+
+        darkModeToggle.addEventListener("click", () => {
+            html.classList.toggle("dark");
+            const theme = html.classList.contains("dark") ? "dark" : "light";
+            localStorage.setItem("theme", theme);
+        });
+
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        mobileMenuToggle.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.add("hidden");
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute("href"));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
+            });
+        });
+
+
+        // Image slider functionality
+
+        function moveSlider(sliderId, direction) {
+            const slider = document.getElementById(sliderId);
+            const slideWidth = slider.clientWidth;
+            slider.scrollBy({
+                left: direction * slideWidth,
+                behavior: 'smooth'
+            });
+        }
+
+
+        // Form submission handling
+        const contactForm = document.getElementById("contactForm");
+        const formSuccess = document.getElementById("formSuccess");
+        const formError = document.getElementById("formError");
+
+        contactForm.addEventListener("submit", async function(e) {
+            e.preventDefault();
+            
+            // Hide previous messages
+            formSuccess.classList.add("hidden");
+            formError.classList.add("hidden");
+            
+            // Get button and disable it
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.innerHTML;
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<span class="material-icons animate-spin">refresh</span> Enviando...';
+            
+            try {
+                // Submit form data
+                const formData = new FormData(contactForm);
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    // Show success message
+                    formSuccess.classList.remove("hidden");
+                    contactForm.reset();
+                    
+                    // Scroll to success message
+                    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    
+                    // Hide success message after 8 seconds
+                    setTimeout(() => {
+                        formSuccess.classList.add("hidden");
+                    }, 8000);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                // Show error message
+                formError.classList.remove("hidden");
+                formError.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                
+                // Hide error message after 8 seconds
+                setTimeout(() => {
+                    formError.classList.add("hidden");
+                }, 8000);
+            } finally {
+                // Re-enable button
+                submitButton.disabled = false;
+                submitButton.innerHTML = originalButtonText;
+            }
+        });
+    </script>
+</body>
+</html>
